@@ -83,7 +83,7 @@ function zephyr.load_syntax()
     FoldColumn = {fg=zephyr.fg_alt,bg=zephyr.black};
     VertSplit = {fg=zephyr.black,bg=zephyr.bg};
     -- Folded = {fg=zephyr.grey,bg=zephyr.bg_highlight};
-    Folded = {fg=zephyr.grey,bg='NONE',style='bold,italic'};
+    Folded = {fg=zephyr.base6,bg='NONE',style='bold,italic'};
     EndOfBuffer = {fg=zephyr.bg,bg=zephyr.none};
     IncSearch = {fg=zephyr.bg1,bg=zephyr.orange,style=zephyr.none};
     Search = {fg=zephyr.bg,bg=zephyr.orange};
