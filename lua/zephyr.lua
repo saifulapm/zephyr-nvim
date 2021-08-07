@@ -82,7 +82,8 @@ function zephyr.load_syntax()
     SignColumn = {fg=zephyr.fg,bg=zephyr.bg};
     FoldColumn = {fg=zephyr.fg_alt,bg=zephyr.black};
     VertSplit = {fg=zephyr.black,bg=zephyr.bg};
-    Folded = {fg=zephyr.grey,bg=zephyr.bg_highlight};
+    -- Folded = {fg=zephyr.grey,bg=zephyr.bg_highlight};
+    Folded = {fg=zephyr.grey,bg='NONE',style='bold,italic'};
     EndOfBuffer = {fg=zephyr.bg,bg=zephyr.none};
     IncSearch = {fg=zephyr.bg1,bg=zephyr.orange,style=zephyr.none};
     Search = {fg=zephyr.bg,bg=zephyr.orange};
@@ -268,7 +269,7 @@ function zephyr.load_plugin_syntax()
 
     NvimTreeFolderName = {fg=zephyr.blue};
     NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
-    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
+    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,style='NONE'};
 
     TelescopeBorder = {fg=zephyr.teal};
     TelescopePromptBorder = {fg=zephyr.blue};
@@ -276,6 +277,13 @@ function zephyr.load_plugin_syntax()
     TelescopeSelection = {fg=zephyr.yellow,bg=zephyr.bg_highlight,style= 'bold'};
     TelescopeSelectionCaret = {fg=zephyr.yellow};
     TelescopeMultiSelection = {fg=zephyr.teal};
+
+    SnapBorder = {fg=zephyr.teal};
+    SnapNormal = {fg=zephyr.blue};
+    SnapPosition = {fg=zephyr.teal};
+    SnapSelect = {fg=zephyr.yellow,bg=zephyr.bg_highlight,style= 'bold'};
+    SnapPrompt = {fg=zephyr.yellow};
+    SnapMultiSelect = {fg=zephyr.teal};
   }
   return plugin_syntax
 end
